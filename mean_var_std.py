@@ -1,8 +1,9 @@
 import numpy as np
 
-user_put = input("Enter 9 digits separated by space: ")
-number = user_put.split()
+# user_put = input("Enter 9 digits separated by space: ")
+# number = user_put.split()
 
+#put list as argument which contain 9 digits
 def calculate(nums):
     if len(nums) != 9:
         raise ValueError("List must contain exactly nine numbers.")
@@ -48,5 +49,5 @@ def calculate(nums):
     for key, value in stat.items():
         print(f"{key}: {value}")
 
-# Call function
-calculate(number)
+# example of Call function
+calculate([1,2,3,4,5,6,7,9])
